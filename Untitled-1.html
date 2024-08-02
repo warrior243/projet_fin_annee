@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue de Médicaments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .symp {
+            margin: 20px 0;
+        }
+        .button_symp {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .text_symptone {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .lesSymptones {
+            list-style: none;
+            padding: 0;
+        }
+        .lesSymptones li {
+            margin: 5px 0;
+        }
+        .lesSymptones a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .lesSymptones a:hover {
+            text-decoration: underline;
+        }
+        .products {
+            margin-top: 20px;
+        }
+        .product {
+            display: none;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="symp" id="symptone">
+    <div class="sympB"><button class="button_symp">SYMPTONES</button></div>
+    <h3 class="text_symptone">Quels sont vos symptômes ?</h3>
+    <div class="lesSymptones">
+        <ul>
+            <li><a href="#" onclick="showProducts('headache')">Maux de tête</a></li>
+            <li><a href="#" onclick="showProducts('stomach')">Maux de ventre</a></li>
+            <li><a href="#" onclick="showProducts('fever')">Fièvre</a></li>
+            <li><a href="#" onclick="showProducts('backpain')">Mal de dos</a></li>
+            <li><a href="#" onclick="showProducts('pain')">Douleurs</a></li>
+            <li><a href="#" onclick="showProducts('eyes')">Yeux</a></li>
+            <li><a href="#" onclick="showProducts('joints')">Articulations</a></li>
+            <li><a href="#" onclick="showProducts('allergies')">Allergies</a></li>
+            <li><a href="#" onclick="showProducts('insomnia')">Insomnies</a></li>
+            <li><a href="#" onclick="showProducts('fatigue')">Fatigue</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="products" id="products">
+    <div class="product" data-category="headache">
+        <h3>Paracétamol</h3>
+        <p>Antidouleur pour maux de tête.</p>
+    </div>
+    <div class="product" data-category="headache">
+        <h3>Ibuprofène</h3>
+        <p>Anti-inflammatoire et antidouleur.</p>
+    </div>
+    <div class="product" data-category="stomach">
+        <h3>Oméprazole</h3>
+        <p>Pour les brûlures d'estomac.</p>
+    </div>
+    <div class="product" data-category="stomach">
+        <h3>Loperamide</h3>
+        <p>Pour le traitement de la diarrhée.</p>
+    </div>
+    <div class="product" data-category="fever">
+        <h3>Acétaminophène</h3>
+        <p>Réducteur de fièvre.</p>
+    </div>
+    <!-- Ajoutez d'autres produits pour chaque catégorie ici -->
+</div>
+
+<script>
+    function showProducts(category) {
+        var products = document.querySelectorAll('.product');
+        products.forEach(function(product) {
+            if (product.getAttribute('data-category') === category) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

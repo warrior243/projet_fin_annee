@@ -1,0 +1,36 @@
+section
+{
+    position: absolute;
+    left: 30%;
+    right: 50%;
+    top: 30%;
+    font-size: 300px;
+}
+span
+{
+    font-size: 250px;
+}
+.d
+{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+.p
+{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+.n
+{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid ;
+}
+span2
+{
+    position: absolute;
+    color: rgb(71, 176, 218);
+}

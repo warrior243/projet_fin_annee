@@ -1,0 +1,27 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuster le nombre de colonnes */
+    gap: 20px; /* Espacement entre les éléments */
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  img {
+    width: 250px;
+    height: auto; /* Ajuster la hauteur si nécessaire */
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 16px;
+    visibility: hidden;
+  }
+  .image-container:hover p
+  {
+    visibility: visible;
+  }

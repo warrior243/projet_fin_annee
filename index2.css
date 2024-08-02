@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+/*
+{
+    background-image: url("C:/Users/RUTH NGWANZA/Documents/DN CODE/web/pharmacie/images/herbs-906140_1920.jpg");
+    background-size: 100%;
+    
+}*/
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: whitesmoke;
+}
+header
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #0677e0;
+    background: url('images/dna-1811955_1280.jpg');
+    background-size: cover;
+    padding-bottom: 250px;
+}
+h1
+{
+    font-family: 'Protest Revolution', 'Stencil', 'Wide Latin';
+    font-size: 300%;
+}
+.h1img
+{
+    height: 50px;
+    width: 50px;
+}
+.h1
+{
+    color: rgb(200, 400, 950);
+    text-decoration: none;
+}
+.nav
+{
+    text-decoration: none;
+    color: rgb(200, 400, 950);
+    margin-right: 10px;
+    padding: 2px;
+    border-bottom: 2px solid;
+    border-radius: 5px;
+    font-size: 120%;
+}
+.nav:hover
+{
+    border-top: 2px solid;
+    border-radius: 5px;
+    color: rgb(200, 400, 950);
+}
+nav
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 300px;
+}
+.acceuil
+{
+    font-family: 'Stencil', 'Wide Latin';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: wheat;
+}
+.h3_acceuil
+{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border-bottom: 1px solid wheat;
+}
+.acceuil button
+{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.acceuil button a
+{
+    color: black;
+    text-decoration: none;
+}
+.acceuil button:hover
+{
+    background-color: aqua;
+    color: green;
+    border-color: blueviolet;
+}
+.discover, .sympB
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 5px;
+}
+.section_discover , .button_symp
+{
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    color: rgb(36, 45, 173);
+    border-color: rgb(36, 45, 173);
+}
+.text_symptone
+{
+    margin-top: 0px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+.lesSymptones ul
+{
+    font-family: 'Courier New', Courier, monospace;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.lesSymptones ul li
+{
+    margin-top: 10px;
+}
+.lesSymptones ul li a
+{
+    margin: 10px;
+    border: 1px solid rgb(12, 31, 36);
+    border-radius: 20px;
+}
+.lesSymptones ul a:hover
+{
+    background-color: rgb(12, 31, 36);
+    color: #fff;
+}
+.lesSymptones ul li a
+{
+    color: rgb(12, 31, 36);
+    text-decoration: none;
+    padding: 5px;
+}
+.product
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 10%;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 100px;
+    width: 1000px;
+}
+.product a
+{
+    width: 300px;
+    margin: 10px;
+    position: relative;
+    margin-bottom: 100px;
+    text-decoration: none;
+    border: 1px gray dashed;
+    background-color: whitesmoke;
+}
+.product img
+{
+    scroll-snap-align: start;
+    width: 300px;
+    height: 200px;
+}
+.product a img
+{
+    transition: transform .2s;
+    margin-bottom: 3px;
+}
+.product a:hover img
+{
+    transform: scale(1.1);
+}
+.product a:hover
+{
+    background-color: rgb(112, 177, 238);
+}
+h4, .description_item
+{
+    color: rgb(36, 45, 173);
+    padding: 10px;
+    margin: 0;
+    opacity: 0;
+    transition: opacity .3s;
+    font-size: 2em;
+}
+.product a:hover h4, .description_item
+{
+    opacity: 3;
+}
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid #0677e0;
+    background-color: darkseagreen;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer h2
+{
+    text-align: center;
+}
+.footer_text
+{
+    padding: 2%;
+}
+.footer_text a
+{
+    text-decoration: none;
+    color: wheat;
+    border: 1px dashed wheat;
+    border-radius: 5px;
+    padding: 2px;
+}
+.footer_text a:hover
+{
+    background-color: wheat;
+    color: darkseagreen ;
+}

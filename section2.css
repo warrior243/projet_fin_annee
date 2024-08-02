@@ -1,0 +1,38 @@
+body
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.image-container {
+    width: 300px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform .2s;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+  
+  .image-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    margin: 0;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  
+  .image-container:hover .image-description {
+    opacity: 1;
+  }

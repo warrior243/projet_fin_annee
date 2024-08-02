@@ -1,0 +1,390 @@
+<!-- ma page principale, la page d'acceuil -->
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!--mon head-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--les feuilles css, la deuxieme est pour le responsive-->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="mediascreen.css">
+    <title>DN_Pharmacie</title>
+  </head>
+  <body>
+    <!--ma page, le contenu-->
+    <div class="bloc_page">
+      <!--l'en-tete de ma page, le debut, on trouvera le nom de mon site et le menu de navigation...-->
+      <header>
+        <!-- le titre principal, le logo de mon site et le nom de mon site -->
+        <div class="titre">
+          <!-- cette image contient le logo du site -->
+          <img src="" alt="" class="logo">
+          <!-- le nom du site -->
+          <h1><a href="#" class="h1"><img class="h1img" src="images/health-304919_1280.png" alt=""> DN PHARMA</a></h1>
+        </div>
+        <!-- Menu  de navigation-->
+        <nav>
+            <a href="#" class="nav"><ion-icon name="home-outline"></ion-icon>Acceuil</a>
+            <a href="#symptone" class="nav"><ion-icon name="bag-add-outline"></ion-icon>Nos Produits</a>
+            <a href="#propos" class="nav"><ion-icon name="alert-circle-outline"></ion-icon> A propos</a>
+            <a href="secour.html" class="nav">Premiers secours</a>
+            <a href="blog.html" class="nav">Blog</a>
+            <a href="login.html" id="nav" class="nav"><ion-icon name="log-in-outline"></ion-icon>Membre</a>
+            <!-- la barre de recherche -->
+            <input type="text" name="" id="barreRech" placeholder="ex: Paracetamol..." onkeyup="searchProducts()">
+        </nav>
+        <!-- le message de bienvenu (l'acceuil de la page)-->
+        <div class="acceuil">
+          <marquee behavior="alternate" direction="" scrollamount=3><h2>Bienvenue chez DN PHARMA,</h2></marquee>
+          <marquee behavior="alternate" direction="right"><h3 class="h3_acceuil">Plus qu'une pharmacie!</h3></marquee>
+          <!-- le boutton parcourir qui te mene vers les produits-->
+          <a href="#symptone"><button>Parcourir</button></a>
+        </div>
+        <!-- Fin du header (en tete)-->
+      </header>
+      <div class="symp" id="symptone">
+        <div class="sympB"><button class="button_symp">SYMPTONES</button></div>
+        <h3 class="text_symptone">Quels sont vos symptones ?</h3>
+        <div class="lesSymptones">
+          <marquee behavior="alternate" direction="">
+            <ul>
+              <li><a href="#" onclick="showProducts('motdetete')" >Mot de tête</a></li>
+              <li><a href="#" onclick="showProducts('ventre')">Mot de ventre</a></li>
+              <li><a href="#" onclick="showProducts('fievre')">Fièvre</a></li>
+              <li><a href="#" onclick="showProducts('dos')">Mal de dos</a></li>
+              <li><a href="#" onclick="showProducts('douleurs')">Douleurs</a></li>
+            </ul>
+          </marquee>
+          <marquee behavior="alternate" direction="right">
+            <ul>
+              <li><a href="#" onclick="showProducts('yeux')">Yeux</a></li>
+              <li><a href="#" onclick="showProducts('articulation')">Articulations</a></li>
+              <li><a href="#" onclick="showProducts('allergie')">Allergies</a></li>
+              <li><a href="#" onclick="showProducts('insomnie')">Insomnies</a></li>
+              <li><a href="#" onclick="showProducts('fatigue')">Fatigue</a></li>
+            </ul>
+          </marquee>
+        </div>
+      </div>
+      <div class="sympros" id="sympros">
+        <a href="doliprane.html" class="sympro" data-category="motdetete douleurs fievre">
+          <img src="images/doliprane.jfif" alt="">
+          <span class="symprodesc">
+            <h4>Doliprane</h4>
+            <p>1000mg - Effervesant - douleurs, fièvre, mot de tête</p>
+            <p class="rix">1000 fc</p>
+          </span>
+        </a>
+        <a href="larmes.html" class="sympro" data-category="yeux">
+          <img src="images/Larmes.jpg" alt="">
+          <span class="symprodesc">
+            <h4>Larmes artificielles (pour sécheresse oculaire)</h4>
+            <p>10ml - Flacon compte-gouttes - yeux, sécheresse oculaire</p>
+            <p class="rix">1000 fc</p>
+          </span>
+        </a>
+        <a href="parac.html" class="sympro" data-category="motdetete douleurs fievre">
+          <img src="images/parac.jfif" alt="">
+          <span class="symprodesc">
+            <h3>Paraceamol</h3>
+            <p>1000mg - 10 comprimés - douleurs, fièvre, mot de tête</p>
+            <p class="rix">1000 fc</p>
+          </span>
+        </a>
+        <a href="ibuprofene.html" class="sympro" data-category="motdetete douleurs articulation fievre">
+          <img src="images/Ibuprofene.jpg" alt="">
+          <span class="symprodesc">
+            <h3>Ibuprofene</h3>
+            <p>400mg - 10 comprimés - douleurs, fièvre,inflammation, mot de tête</p>
+            <p class="rix">1000 fc</p>
+          </span>
+        </a>
+        <a href="omeprazole.html" class="sympro" data-category="ventre estomac">
+          <img src="images/Omeprazole.jpg" alt="">
+          <span class="symprodesc">
+            <h3>Oméprazole</h3>
+            <p>20g - 7 ou 14 gélules - Mot de ventre, Gastrite, Estomac</p>
+            <p class="rix">1000 fc</p>
+          </span>
+        </a>
+      </div>
+      <section class="main" id="product">
+        <div class="discover"><button class="section_discover">DECOUVRIR</button></div>
+        <div class="product">
+          <a href="" class="item">
+            <img src="images/pharmacy-3087598_1280.jpg" alt="">
+            <h4></h4>
+            <span class="description"></span>
+          </a>
+          <a href="doliprane.html" class="item">
+            <img src="images/doliprane.jfif" alt="">
+            <span class="description">
+              <h4>Doliprane</h4>
+              <p>1000mg - Effervesant - douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="parac.html" class="item">
+            <img src="images/parac.jfif" alt="">
+            <span class="description">
+              <h3>Paraceamol</h3>
+              <p>1000mg - 10 comprimés - douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="vitamin.html" class="item">
+            <img src="images/vitamins-26622_1280.png" alt="">
+            <span class="description">
+              <h4>Vitamines</h4>
+              <p>1000mg - Comprimés Comprimés - douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="dafalgan.html" class="item">
+            <img src="images/DAFALGAN.jfif" alt="">
+            <span class="description">
+              <h4>Dafalgan</h4>
+              <p>1000mg - Comprimés Effervesant - douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="efferalgan.html" class="item">
+            <img src="images/EFFERALGAN.jfif" alt="">
+            <span class="description">
+              <h4>Efferalgan</h4>
+              <p>1000mg - Comprimés Effervesant - douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="gaviscon.html" class="item">
+            <img src="images/gaviscon.png" alt="">
+            <span class="description">
+              <h4>Gaviscon</h4>
+              <p>1000mg - Tubes gélés - douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="imodium.html" class="item">
+            <img src="images/imodium.jfif" alt="">
+            <span class="description">
+              <h4>Imodium</h4>
+              <p>1000mg - Comprimés - douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="kardegic.html" class="item">
+            <img src="images/KARDEGIC.jpg" alt="">
+            <span class="description">
+              <h4>Kardegic</h4>
+              <p>1000mg - Poudre de solution buvable - douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="levothyrox.html" class="item">
+            <img src="images/LEVOTHYROX.jfif" alt="">
+            <span class="description">
+              <h4>Levothyrox</h4>
+              <p>1000mg - Comprimés sécable - douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="microlax.html" class="item">
+            <img src="images/microlax.jfif" alt="">
+            <span class="description">
+              <h4>Microlax</h4>
+              <p>1000mg - Solution rectale - douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="panadol.html" class="item">
+            <img src="images/panad.jfif" alt="">
+            <span class="description">
+              <h4>Panadol</h4>
+              <p>1000mg - Comprimés - douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="quinine.html" class="item">
+            <img src="images/quinine.jfif" alt="">
+            <span class="description">
+              <h4>Quinine</h4>
+              <p>1000mg-Effervesant-douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="quinine.html" class="item">
+            <img src="images/quinine2.jfif" alt="">
+            <span class="description">
+              <h4>Quinine</h4>
+              <p>1000mg-Effervesant-douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="socomol.html" class="item">
+            <img src="images/socomol.jfif" alt="">
+            <span class="description">
+              <h4>Socomol</h4>
+              <p>1000mg-Effervesant-douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="spasfon.html" class="item">
+            <img src="images/SPASFON.jfif" alt="">
+            <span class="description">
+              <h4>Spasfon</h4>
+              <p>1000mg-Effervesant-douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="syring.html" class="item">
+            <img src="images/syringe-1884784_1280.jpg" alt="">
+            <span class="description">
+              <h4>Syringue</h4>
+              <p>1000mg-Effervesant-douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="" class="item">
+            <img src="images/test-214185_1280.jpg" alt="">
+            <span class="description">
+              <h4></h4>
+              <p>1000mg-Effervesant-douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="thermo.html" class="item">
+            <img src="images/thermometer-1539191_1280.jpg" alt="">
+            <span class="description">
+              <h4>Thermomètre</h4>
+              <p>1000mg-Effervesant-douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="" class="item">
+            <img src="images/lab-217043_1280.jpg" alt="">
+            <span class="description">
+              <h4></h4>
+              <p>1000mg-Effervesant-douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="Ampoule.html" class="item">
+            <img src="images/Ampoules.JPG" alt="">
+            <span class="description">
+              <h4>Ampoules</h4>
+              <p>1000mg-Effervesant-douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="trixon.html" class="item">
+            <img src="images/Trixon.JPG" alt="">
+            <span class="description">
+              <h4>Trixon</h4>
+              <p>1000mg-Effervesant-douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="nuravit.html" class="item">
+            <img src="images/Nuravit.JPG" alt="">
+            <span class="description">
+              <h4>Nuravit</h4>
+              <p>1000mg-Effervesant-douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="capsule.html" class="item">
+            <img src="images/capsules-1079838_1280.jpg" alt="">
+            <span class="description">
+              <h4>Capsules</h4>
+              <p>1000mg-Effervesant-douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+          <a href="brufen.html" class="item">
+            <img src="images/Brufen.JPG" alt="">
+            <span class="description">
+              <h4>Brufen</h4>
+              <p>1000mg-Effervesant-douleurs, fièvre, mot de tête</p>
+              <p class="rix">1000 fc</p>
+            </span>
+          </a>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h4>À propos de nous</h4>
+                    <p>Nous sommes dédiés à fournir les meilleurs médicaments et services pharmaceutiques.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Adresse: 123 Rue de la Santé, kinshasa, R.D.C</p>
+                    <p>Téléphone: +243 97 1915970</p>
+                    <p>Email: danielngwanza@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html">Médicaments</a></li>
+                        <li><a href="partenaires.html">Pharmacies partenaires</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-media">
+                        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="images/insta.jpg" alt="Instagram"></a>
+                        <a href="#"><img src="images/linkedin.png" alt="Linkedin"></a>
+                        <a href="#"><img src="images/x.png" alt="twitter"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <form action="#">
+                        <input type="email" placeholder="Entrez votre email" required>
+                        <button type="submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DN Pharma. Tous droits réservés.</p>
+        </div>
+      </footer>
+    <!--
+    <footer>
+        <div class="titre_footer">
+          <img src="" alt="" class="logo">
+          <h1><a href="#" class="h1">
+          <img class="h1img" src="images/health-304919_1280.png" alt=""> DN PHARMA</a></h1>
+        </div>
+        <div class="footer_text">
+          <div id="propos">
+            <h2><u>A propos de Nous</u></h2>
+            <p>DN Pharma est un système qui vous aides à vous documenter sur les differents produits medecinal, les differentes pharmacie et hopitaux afin
+              de trouver la solution à votre santé. Ici nous vou recommandons les meilleurs produits et ou les trouver.
+              Nous vous offrons une documentation assez complète sur le produits que vous voulez.
+              Nous n'avons pas que des medicament, nous avons une plus grande gamme d'éléments pour vous aidez au quotidient.
+              Vous ne vous sentez pas bien ? Decrivez-nous vos symptones et nous vous recommandons les meilleurs produits pour vous aidez, ou trouver les produits,
+              dans quel hopital specialise vous pouvez aller pour trouverla solution à votre problème.
+              Nous sommes un centre d'aide et de recherche pour vos problème du quotidient.
+              Plus qu'une pharmacie, Plus qu'un hopital, Plus qu'un labo,Plus qu'un site, Nous sommes la solution à votre problè <br>
+              <a href="" target="_blank" rel="noopener noreferrer">>Vous voulez en savoir encore plus sur nous ?<</a>
+            </p>
+          </div>
+          <div class="contact">
+            <h2><u><a href="mailto:danielngwanza@gmail.com">Besoin de nous contacter ?</a></u></h2>
+          </div>
+        </div>
+      </footer>
+    -->
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

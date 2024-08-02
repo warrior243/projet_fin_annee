@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Santé - PHARMA</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <header>
+        <!-- le titre principal, le logo de mon site et le nom de mon site -->
+        <div class="titre">
+          <!-- cette image contient le logo du site -->
+          <img src="" alt="" class="logo">
+          <!-- le nom du site -->
+          <h1><a href="#" class="h1"><img class="h1img" src="images/health-304919_1280.png" alt=""> DN PHARMA Blog</a></h1>
+        </div>
+        <!-- Menu  de navigation-->
+        <nav>
+            <a href="index.html" class="nav"><ion-icon name="home-outline"></ion-icon>Acceuil</a>
+            <a href="index.html" class="nav"><ion-icon name="bag-add-outline"></ion-icon>Nos Produits</a>
+            <a href="#" class="nav"><ion-icon name="alert-circle-outline"></ion-icon> A propos</a>
+            <a href="secour.html" class="nav">Premiers secours</a>
+            <a href="login.html" id="nav" class="nav"><ion-icon name="log-in-outline"></ion-icon>Membre</a>
+        </nav>
+        <!-- le message de bienvenu (l'acceuil de la page)-->
+        <div class="acceuil">
+            <h2>Le Blog médical 👨‍⚕️,</h2>
+            <h3 class="h3_acceuil">Ici vous trouverez des astuces pour garder la forme 💪</h3>
+            <section id="search-section">
+                <input type="text" id="searchBar" placeholder="Rechercher un article..." onkeyup="searchArticles()">
+            </section>
+        </div>
+        <!-- Fin du header (en tete)-->
+      </header>
+    <main>
+        
+        <section id="articles">
+            
+            <article class="blog-article" data-keywords="nutrition alimentation saine">
+                <h2>Importance de la Nutrition</h2>
+                <p>
+                    Une alimentation équilibrée est essentielle pour maintenir une bonne santé. Voici quelques conseils pour améliorer votre nutrition :
+                </p>
+                <ul>
+                    <li>Mangez une variété d'aliments pour obtenir tous les nutriments nécessaires.</li>
+                    <li>Limitez la consommation de sucre, de sel et de graisses saturées.</li>
+                    <li>Privilégiez les fruits, légumes, grains entiers et protéines maigres.</li>
+                </ul>
+            </article>
+            
+            <article class="blog-article" data-keywords="exercice activité physique">
+                <h2>Exercice Physique</h2>
+                <p>
+                    L'exercice régulier est crucial pour maintenir une bonne santé physique et mentale. Voici quelques astuces pour intégrer l'exercice dans votre routine :
+                </p>
+                <ul>
+                    <li>Choisissez des activités que vous aimez, comme la marche, la natation ou le vélo.</li>
+                    <li>Fixez-vous des objectifs réalistes et augmentez progressivement l'intensité.</li>
+                    <li>Trouvez un partenaire d'exercice pour rester motivé.</li>
+                </ul>
+            </article>
+            
+            <article class="blog-article" data-keywords="sommeil qualité sommeil">
+                <h2>Améliorer le Sommeil</h2>
+                <p>
+                    Un bon sommeil est essentiel pour votre santé globale. Voici quelques conseils pour améliorer la qualité de votre sommeil :
+                </p>
+                <ul>
+                    <li>Établissez une routine de coucher régulière.</li>
+                    <li>Évitez les écrans au moins une heure avant de vous coucher.</li>
+                    <li>Créez un environnement de sommeil confortable et sombre.</li>
+                </ul>
+            </article>
+            
+            <article class="blog-article" data-keywords="gestion stress relaxation">
+                <h2>Gestion du Stress</h2>
+                <p>
+                    Le stress peut avoir des effets négatifs sur votre santé. Voici quelques méthodes pour le gérer :
+                </p>
+                <ul>
+                    <li>Pratiquez la méditation ou le yoga pour vous détendre.</li>
+                    <li>Faites de l'exercice régulièrement pour réduire le stress.</li>
+                    <li>Parlez de vos soucis avec un ami ou un professionnel.</li>
+                </ul>
+            </article>
+            
+            <article class="blog-article" data-keywords="hydratation eau boire">
+                <h2>L'Importance de l'Hydratation</h2>
+                <p>
+                    Rester hydraté est crucial pour le fonctionnement de votre corps. Voici comment vous assurer de boire suffisamment d'eau :
+                </p>
+                <ul>
+                    <li>Buvez au moins 8 verres d'eau par jour.</li>
+                    <li>Portez une bouteille d'eau avec vous pour vous rappeler de boire.</li>
+                    <li>Consommez des aliments riches en eau comme les fruits et légumes.</li>
+                </ul>
+            </article>
+            <!-- 1. Importance de la Nutrition -->
+            <article class="blog-article" data-keywords="nutrition alimentation saine">
+                <h2>Importance de la Nutrition</h2>
+                <p>Une alimentation équilibrée est essentielle pour maintenir une bonne santé. Voici quelques conseils pour améliorer votre nutrition :</p>
+                <ul>
+                    <li>Mangez une variété d'aliments pour obtenir tous les nutriments nécessaires.</li>
+                    <li>Limitez la consommation de sucre, de sel et de graisses saturées.</li>
+                    <li>Privilégiez les fruits, légumes, grains entiers et protéines maigres.</li>
+                </ul>
+            </article>
+            <!-- 2. Bienfaits de l'Exercice Physique -->
+            <article class="blog-article" data-keywords="exercice bienfaits">
+                <h2>Bienfaits de l'Exercice Physique</h2>
+                <p>L'exercice physique régulier a de nombreux avantages pour la santé :</p>
+                <ul>
+                    <li>Améliore la condition physique générale.</li>
+                    <li>Réduit le risque de maladies chroniques comme le diabète et les maladies cardiaques.</li>
+                    <li>Améliore la santé mentale en réduisant le stress et l'anxiété.</li>
+                </ul>
+            </article>
+            <!-- 3. Gestion du Stress -->
+            <article class="blog-article" data-keywords="stress gestion relaxation">
+                <h2>Gestion du Stress</h2>
+                <p>Le stress peut avoir des effets négatifs sur la santé. Voici quelques techniques pour le gérer :</p>
+                <ul>
+                    <li>Pratiquez des exercices de respiration et de relaxation.</li>
+                    <li>Faites de l'exercice régulièrement.</li>
+                    <li>Planifiez des activités relaxantes comme la lecture ou le yoga.</li>
+                </ul>
+            </article>
+            <!-- 4. L'Importance du Sommeil -->
+            <article class="blog-article" data-keywords="sommeil repos santé">
+                <h2>L'Importance du Sommeil</h2>
+                <p>Un bon sommeil est crucial pour la santé globale. Voici quelques conseils pour améliorer votre sommeil :</p>
+                <ul>
+                    <li>Établissez une routine de sommeil régulière.</li>
+                    <li>Créez un environnement de sommeil confortable.</li>
+                    <li>Évitez les écrans et la caféine avant de dormir.</li>
+                </ul>
+            </article>
+            <!-- 5. Hydratation et Santé -->
+            <article class="blog-article" data-keywords="hydratation eau santé">
+                <h2>Hydratation et Santé</h2>
+                <p>Rester bien hydraté est essentiel pour de nombreuses fonctions corporelles. Voici quelques conseils :</p>
+                <ul>
+                    <li>Buvez au moins 8 verres d'eau par jour.</li>
+                    <li>Consommez des aliments riches en eau comme les fruits et légumes.</li>
+                    <li>Évitez les boissons sucrées et alcoolisées.</li>
+                </ul>
+            </article>
+            <!-- 6. Prévention des Maladies Infectieuses -->
+            <article class="blog-article" data-keywords="prévention maladies infectieuses">
+                <h2>Prévention des Maladies Infectieuses</h2>
+                <p>La prévention des maladies infectieuses est cruciale pour protéger votre santé et celle des autres :</p>
+                <ul>
+                    <li>Lavez-vous les mains régulièrement avec de l'eau et du savon.</li>
+                    <li>Évitez de toucher votre visage avec des mains non lavées.</li>
+                    <li>Utilisez des mouchoirs en papier pour tousser ou éternuer et jetez-les immédiatement.</li>
+                    <li>Gardez vos vaccinations à jour.</li>
+                </ul>
+            </article>
+            <!-- 7. Bienfaits des Aliments Fermentés -->
+            <article class="blog-article" data-keywords="aliments fermentés probiotiques">
+                <h2>Bienfaits des Aliments Fermentés</h2>
+                <p>Les aliments fermentés comme le yaourt, le kimchi et le kéfir sont riches en probiotiques, bénéfiques pour la santé digestive :</p>
+                <ul>
+                    <li>Améliorent la digestion et la santé intestinale.</li>
+                    <li>Renforcent le système immunitaire.</li>
+                    <li>Peuvent aider à réduire l'inflammation.</li>
+                    <li>Favorisent l'absorption des nutriments.</li>
+                </ul>
+            </article>
+            <!-- 8. Importance de la Santé Mentale -->
+            <article class="blog-article" data-keywords="santé mentale bien-être">
+                <h2>Importance de la Santé Mentale</h2>
+                <p>La santé mentale est tout aussi importante que la santé physique. Voici quelques conseils pour prendre soin de votre bien-être mental :</p>
+                <ul>
+                    <li>Pratiquez la pleine conscience et la méditation.</li>
+                    <li>Entretenez des relations positives et de soutien.</li>
+                    <li>Faites régulièrement des activités que vous aimez.</li>
+                    <li>N'hésitez pas à demander de l'aide professionnelle si nécessaire.</li>
+                </ul>
+            </article>
+            <!-- 9. Aliments à Éviter pour une Meilleure Santé -->
+            <article class="blog-article" data-keywords="aliments éviter santé">
+                <h2>Aliments à Éviter pour une Meilleure Santé</h2>
+                <p>Certains aliments peuvent nuire à votre santé s'ils sont consommés en excès :</p>
+                <ul>
+                    <li>Sodas et boissons sucrées.</li>
+                    <li>Aliments riches en graisses trans et saturées.</li>
+                    <li>Produits transformés riches en sel et en sucre.</li>
+                    <li>Alcool en excès.</li>
+                </ul>
+            </article>
+            <!-- 10. Comment Arrêter de Fumer -->
+            <article class="blog-article" data-keywords="arrêter de fumer tabac">
+                <h2>Comment Arrêter de Fumer</h2>
+                <p>Arrêter de fumer est l'une des meilleures décisions pour votre santé. Voici quelques étapes pour y parvenir :</p>
+                <ul>
+                    <li>Établissez une date d'arrêt et respectez-la.</li>
+                    <li>Évitez les déclencheurs qui vous incitent à fumer.</li>
+                    <li>Utilisez des substituts nicotiniques ou des médicaments si nécessaire.</li>
+                    <li>Rejoignez un groupe de soutien ou demandez de l'aide à un professionnel.</li>
+                </ul>
+                </article>            
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-sections">
+                    <div class="footer-section">
+                        <h4>À propos de nous</h4>
+                        <p>Nous sommes dédiés à fournir les meilleurs médicaments et services pharmaceutiques.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p>Adresse: 123 Rue de la Santé, kinshasa, R.D.C</p>
+                        <p>Téléphone: +243 97 1915970</p>
+                        <p>Email: danielngwanza@gmail.com</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Liens rapides</h4>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="index.html">Médicaments</a></li>
+                            <li><a href="partenaires.html">Pharmacies partenaires</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Suivez-nous</h4>
+                        <div class="social-media">
+                            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                            <a href="#"><img src="images/insta.jpg" alt="Instagram"></a>
+                            <a href="#"><img src="images/linkedin.png" alt="Linkedin"></a>
+                            <a href="#"><img src="images/x.png" alt="twitter"></a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Newsletter</h4>
+                        <form action="#">
+                            <input type="email" placeholder="Entrez votre email" required>
+                            <button type="submit">S'abonner</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DN Pharma. Tous droits réservés.</p>
+            </div>
+          </footer>
+    </main>
+    <script src="blog.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

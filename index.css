@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+/*
+{
+    background-image: url("C:/Users/RUTH NGWANZA/Documents/DN CODE/web/pharmacie/images/herbs-906140_1920.jpg");
+    background-size: 100%;
+    
+}*/
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: whitesmoke;
+}
+header
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    border-bottom: 5px solid #0677e0;
+    border-radius: 10px;
+    background: url('images/dna-1811955_1280.jpg');
+    background-size: cover;
+    padding-bottom: 250px;
+}
+h1
+{
+    font-family: 'Protest Revolution', 'Stencil', 'Wide Latin';
+    font-size: 300%;
+}
+.h1img
+{
+    height: 50px;
+    width: 50px;
+}
+.h1
+{
+    color: rgb(200, 400, 950);
+    text-decoration: none;
+}
+.nav
+{
+    text-decoration: none;
+    color: rgb(200, 400, 950);
+    margin-right: 10px;
+    padding: 2px;
+    border-bottom: 2px solid;
+    border-radius: 5px;
+    font-size: 120%;
+}
+.nav:hover
+{
+    border-top: 2px solid;
+    border-radius: 5px;
+    color: rgb(200, 400, 950);
+}
+nav
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+nav input
+{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 7px;
+    border-radius: 20px;
+    color: rgb(200, 400, 950);
+    border: 2px solid rgb(200, 400, 950);
+    width: 130px;
+}
+nav input:hover
+{
+    transition: 1.5s;
+    width: 180px;
+}
+.acceuil
+{
+    font-family: 'Stencil', 'Wide Latin';
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: wheat;
+    font-size: 2em;
+}
+.acceuil h2
+{
+    width: 100%;
+}
+.acceuil h2:hover
+{
+    transition: 1.5s;
+    transform: scale(1.5);
+}
+.h3_acceuil
+{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border-bottom: 1px solid wheat;
+}
+.h3_acceuil:hover
+{
+    transition: 1.5s;
+    transform: scale(1.5);
+}
+.acceuil button
+{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.acceuil button a
+{
+    color: black;
+    text-decoration: none;
+}
+.acceuil button:hover
+{
+    transition: 1.2s;
+    background-color: aqua;
+    color: green;
+    border-color: blueviolet;
+}
+.discover, .sympB
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 5px;
+}
+.section_discover , .button_symp
+{
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(36, 45, 173);
+    border-color: rgb(36, 45, 173);
+}
+.text_symptone
+{
+    margin-top: 0px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+.lesSymptones
+{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin-left: -10%;
+}
+.lesSymptones ul
+{
+    font-family: 'Courier New', Courier, monospace;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.lesSymptones ul li
+{
+    margin-top: 10px;
+}
+.lesSymptones ul li:hover
+{
+    transition: 1.2s;
+    transform: scale(1.2);
+}
+.lesSymptones ul li a
+{
+    margin: 10px;
+    border: 1px solid rgb(12, 31, 36);
+    border-radius: 20px;
+}
+.lesSymptones ul a:hover
+{
+    transition: 1.2s;
+    background-color: rgb(12, 31, 36);
+    color: #fff;
+}
+.lesSymptones ul li a
+{
+    color: rgb(12, 31, 36);
+    text-decoration: none;
+    padding: 5px;
+}
+
+/**/
+
+.sympros {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sympro {
+    display: none;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    color: black;
+}
+.sympro img
+{
+    width: 100%;
+    height: 150px;
+}
+
+/**/
+
+.product
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product a
+{
+    width: 300px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.product a img
+{
+    width: 100%;
+    height: 50%;
+    transition: transform .2s;
+    margin-bottom: 3px;
+    border-bottom: 2px solid;
+}
+.product a:hover img
+{
+    transition: 1.5s;
+    transform: scale(1.1);
+}
+.description
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: rgb(36, 45, 173);
+    padding: 10px;
+    margin: 0;
+    opacity: 0;
+    transition: opacity .3s;
+}
+.product a:hover .description
+{
+    opacity: 3;
+    transition: 1.5s;
+}
+
+.footer {
+    background-color: #282828;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section form {
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-section form input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.footer-section form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-section form button:hover {
+    background-color: #ff4b3a;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+}

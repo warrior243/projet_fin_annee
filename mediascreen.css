@@ -1,0 +1,58 @@
+
+@media screen and (max-width : 1000px)
+{
+  header
+  {
+    padding-bottom: 150px;
+  }
+  nav
+  {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  h1
+  {
+    font-size: 2em;
+  }
+  .nav
+  {
+    font-size: 100%;
+  }
+  .product
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .product a
+  {
+    width: 300px;
+    margin: 10px;
+  }
+  .product a img
+  {
+    width: 50%;
+    height: auto;
+    margin-bottom: 3px;
+  }
+  .item
+  {
+    display: flex;
+    justify-content: end;
+    height: 200px;
+  }
+  .description
+  {
+    width: 45%;
+  }
+  h4, .description
+  {
+    color: rgb(36, 45, 173);
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .product a h4, .description
+  {
+    opacity: 3;
+  }
+}

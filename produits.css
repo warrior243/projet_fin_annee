@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: whitesmoke;
+}
+header
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-bottom: 5px solid #0677e0;
+    border-radius: 10px;
+    background: url('images/dna-1811955_1280.jpg');
+    background-size: cover;
+}
+h1
+{
+    font-family: 'Protest Revolution', 'Stencil', 'Wide Latin';
+}
+.h1img
+{
+    height: 50px;
+    width: 50px;
+}
+.h1
+{
+    color: rgb(200, 400, 950);
+    text-decoration: none;
+}
+.nav
+{
+    text-decoration: none;
+    color: rgb(200, 400, 950);
+    padding: 2px;
+    border-bottom: 2px solid;
+    border-radius: 5px;
+    font-size: 120%;
+}
+.nav:hover
+{
+    border-top: 2px solid;
+    border-radius: 5px;
+    color: rgb(200, 400, 950);
+}
+nav
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h2
+{
+    background-image: url('images/bacteria-3662695_12802.jpg');
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    text-align: center
+}
+.des
+{
+    display: flex;
+    justify-content: space-around;
+}
+.des img
+{
+    width: 250px;
+}
+h3, h4
+{
+    display: flex;
+    justify-content: center;
+}
+.container
+{
+    display: flex;
+}
+.card
+{
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 200px;
+    background-color: #fff;
+    flex: 1;
+    transition: 3s all ease;
+}
+.card:hover
+{
+    flex: 2;
+    background-color: rgb(207, 207, 207);
+}
+.doc
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.footer {
+    background-color: #282828;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section form {
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-section form input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.footer-section form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-section form button:hover {
+    background-color: #ff4b3a;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+
+/* le responsive ici*/
+

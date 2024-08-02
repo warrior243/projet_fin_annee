@@ -1,0 +1,33 @@
+.container
+{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 100px;
+    width: 1000px;
+}
+.container img
+{
+    scroll-snap-align: start;
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 10px;
+}
+button
+{
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.prec
+{
+    margin-left: 0;
+}
+.next
+{
+    margin-right: 0;
+}

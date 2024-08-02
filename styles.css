@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #282828;
+}
+
+.header-container .logo {
+    width: 100px;
+}
+
+.header-container nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container nav ul li {
+    margin: 0 10px;
+}
+
+.header-container nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-container input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Welcome Section Styles */
+.welcome-section {
+    background: url('dna-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.welcome-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.welcome-text p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #282828;
+}
+
+/* Symptoms Section Styles */
+.symptoms-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+.symptoms-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.symptoms-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.symptoms-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.symptoms-buttons button {
+    background-color: #ffffff;
+    border: 2px solid #282828;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.symptoms-buttons button:hover {
+    background-color: #282828;
+    color: #ffffff;
+}
+
+/* Products Section Styles */
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.product {
+    margin: 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #282828;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section form {
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-section form input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.footer-section form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-section form button:hover {
+    background-color: #ff4b3a;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+}

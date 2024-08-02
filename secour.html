@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestes de Premiers Secours</title>
+    <link rel="stylesheet" href="secour.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <!-- le titre principal, le logo de mon site et le nom de mon site -->
+        <div class="titre">
+          <!-- cette image contient le logo du site -->
+          <img src="" alt="" class="logo">
+          <!-- le nom du site -->
+          <h1><a href="#" class="h1"><img class="h1img" src="images/health-304919_1280.png" alt=""> DN PHARMA</a></h1>
+        </div>
+        <!-- Menu  de navigation-->
+        <nav>
+            <a href="index.html" class="nav"><ion-icon name="home-outline"></ion-icon>Acceuil</a>
+            <a href="index.html" class="nav"><ion-icon name="bag-add-outline"></ion-icon>Nos Produits</a>
+            <a href="#" class="nav"><ion-icon name="alert-circle-outline"></ion-icon> A propos</a>
+            <a href="blog.html" class="nav">Blog</a>
+            <a href="login.html" id="nav" class="nav"><ion-icon name="log-in-outline"></ion-icon>Membre</a>
+        </nav>
+        <!-- le message de bienvenu (l'acceuil de la page)-->
+        <div class="acceuil">
+            <h2>Premiers Secours 🧰,</h2>
+            <h3 class="h3_acceuil">Ici vous trouverez quoi faire en cas d'urgence médicale⛑</h3>
+            <div id="search-section">
+                <i class='bx bx-search-alt-2'></i>
+                <input type="text" id="searchBar" placeholder="Rechercher un geste de secours... " onkeyup="searchActions()">
+            </div>
+        </div>
+        <!-- Fin du header (en tete)-->
+      </header>
+    <main>
+        <section id="actions">
+            <article class="secours-action" data-keywords="saignement hémorragie blessure">
+                <h2>Arrêter un Saignement</h2>
+                <p>
+                    Si une personne saigne abondamment, il est important d'agir rapidement pour arrêter le saignement. Voici les étapes à suivre :
+                </p>
+                <ol>
+                    <li>Appliquez une pression directe sur la plaie avec un tissu propre ou un pansement.</li>
+                    <li>Si possible, surélevez la partie du corps blessée pour réduire le saignement.</li>
+                    <li>Si le saignement ne s'arrête pas, continuez à appliquer une pression et demandez de l'aide médicale d'urgence.</li>
+                </ol>
+            </article>
+            
+            <article class="secours-action" data-keywords="étouffement Heimlich suffocation">
+                <h2>Aider en Cas d'Étouffement</h2>
+                <p>
+                    Lorsqu'une personne s'étouffe, vous devez agir rapidement pour dégager ses voies respiratoires :
+                </p>
+                <ol>
+                    <li>Encouragez la personne à tousser pour essayer de dégager l'obstruction.</li>
+                    <li>Si cela ne fonctionne pas, utilisez la manœuvre de Heimlich : placez-vous derrière la personne, entourez-la de vos bras et exercez des pressions abdominales fortes et rapides.</li>
+                    <li>Si la personne perd connaissance, allongez-la sur le sol et commencez la réanimation cardiopulmonaire (RCP).</li>
+                </ol>
+            </article>
+            
+            <article class="secours-action" data-keywords="brûlure brûler chaleur">
+                <h2>Traiter une Brûlure</h2>
+                <p>
+                    Les brûlures peuvent varier en gravité. Pour les brûlures mineures, suivez ces étapes :
+                </p>
+                <ol>
+                    <li>Refroidissez la brûlure sous l'eau courante froide pendant au moins 10 minutes.</li>
+                    <li>Couvrez la brûlure avec un pansement stérile non adhésif ou un linge propre.</li>
+                    <li>Ne percez pas les cloques et évitez les remèdes maison comme le beurre ou les huiles.</li>
+                    <li>Pour les brûlures graves, appelez immédiatement les services d'urgence.</li>
+                </ol>
+            </article>
+            
+            <article class="secours-action" data-keywords="fracture os cassé">
+                <h2>Immobiliser une Fracture</h2>
+                <p>
+                    Si vous suspectez une fracture, voici ce que vous devez faire :
+                </p>
+                <ol>
+                    <li>Évitez de bouger la personne sauf si absolument nécessaire.</li>
+                    <li>Immobilisez la zone affectée avec une attelle ou tout objet rigide à portée de main.</li>
+                    <li>Appliquez une compresse froide pour réduire l'enflure et la douleur.</li>
+                    <li>Recherchez de l'aide médicale d'urgence.</li>
+                </ol>
+            </article>
+            
+            <article class="secours-action" data-keywords="réanimation cardiopulmonaire RCP CPR">
+                <h2>Réanimation Cardiopulmonaire (RCP)</h2>
+                <p>
+                    La RCP peut sauver des vies en cas d'arrêt cardiaque. Suivez ces étapes :
+                </p>
+                <ol>
+                    <li>Assurez-vous que la personne est sur une surface dure et plane.</li>
+                    <li>Placez vos mains l'une sur l'autre au centre de la poitrine de la personne.</li>
+                    <li>Appuyez fort et rapidement (au rythme de 100-120 compressions par minute).</li>
+                    <li>Continuez jusqu'à l'arrivée des secours ou jusqu'à ce que la personne montre des signes de vie.</li>
+                </ol>
+            </article>
+            <!-- 1. Arrêter un Saignement -->
+            <article class="secours-action" data-keywords="saignement hémorragie blessure">
+                <h2>Arrêter un Saignement</h2>
+                <p>Si une personne saigne abondamment, il est important d'agir rapidement pour arrêter le saignement. Voici les étapes à suivre :</p>
+                <ol>
+                    <li>Appliquez une pression directe sur la plaie avec un tissu propre ou un pansement.</li>
+                    <li>Si possible, surélevez la partie du corps blessée pour réduire le saignement.</li>
+                    <li>Si le saignement ne s'arrête pas, continuez à appliquer une pression et demandez de l'aide médicale d'urgence.</li>
+                </ol>
+            </article>
+            <!-- 2. Réanimer une Personne en Arrêt Cardiaque -->
+            <article class="secours-action" data-keywords="arrêt cardiaque réanimation CPR">
+                <h2>Réanimer une Personne en Arrêt Cardiaque</h2>
+                <p>Lorsqu'une personne est en arrêt cardiaque, il est crucial d'agir vite :</p>
+                <ol>
+                    <li>Appelez immédiatement les secours.</li>
+                    <li>Commencez les compressions thoraciques : placez vos mains au centre de la poitrine et appuyez fermement et rapidement.</li>
+                    <li>Continuez jusqu'à l'arrivée des secours ou jusqu'à ce que la personne montre des signes de reprise de conscience.</li>
+                </ol>
+            </article>
+            <!-- 3. Étouffement Chez l'Adulte -->
+            <article class="secours-action" data-keywords="étouffement Heimlich">
+                <h2>Étouffement Chez l'Adulte</h2>
+                <p>Si un adulte s'étouffe :</p>
+                <ol>
+                    <li>Demandez à la personne de se pencher en avant et de tousser pour tenter de déloger l'objet.</li>
+                    <li>Si cela ne fonctionne pas, appliquez la manœuvre de Heimlich : placez-vous derrière la personne, faites un poing avec une main et placez-le juste au-dessus du nombril. Effectuez des pressions rapides vers l'intérieur et vers le haut.</li>
+                    <li>Répétez jusqu'à ce que l'objet soit expulsé ou que la personne perde connaissance.</li>
+                </ol>
+            </article>
+            <!-- 4. Brûlures Mineures -->
+            <article class="secours-action" data-keywords="brûlures soins">
+                <h2>Soins des Brûlures Mineures</h2>
+                <p>Pour traiter une brûlure mineure :</p>
+                <ol>
+                    <li>Refroidissez la brûlure sous l'eau courante froide pendant au moins 10 minutes.</li>
+                    <li>Couvrez la brûlure avec un pansement stérile.</li>
+                    <li>Ne percez pas les cloques et évitez les remèdes maison comme le beurre ou l'huile.</li>
+                </ol>
+            </article>
+            <!-- 5. Fractures et Entorses -->
+            <article class="secours-action" data-keywords="fractures entorses">
+                <h2>Fractures et Entorses</h2>
+                <p>En cas de fracture ou d'entorse :</p>
+                <ol>
+                    <li>Immobilisez la zone affectée en utilisant une attelle ou en la maintenant en position de repos.</li>
+                    <li>Appliquez de la glace pour réduire l'enflure.</li>
+                    <li>Consultez un professionnel de la santé dès que possible.</li>
+                </ol>
+            </article>
+            <!-- 6. Empoisonnement -->
+            <article class="secours-action" data-keywords="empoisonnement toxines">
+                <h2>Empoisonnement</h2>
+                <p>En cas de suspicion d'empoisonnement :</p>
+                <ol>
+                    <li>Appelez immédiatement les services d'urgence.</li>
+                    <li>Essayez de déterminer la substance ingérée et la quantité.</li>
+                    <li>Ne faites pas vomir la personne à moins que les services d'urgence ne le conseillent.</li>
+                </ol>
+            </article>
+            <!-- 7. Crise d'Ashtme -->
+            <article class="secours-action" data-keywords="asthme crise inhalateur">
+                <h2>Crise d'Asthme</h2>
+                <p>Lorsqu'une personne fait une crise d'asthme :</p>
+                <ol>
+                    <li>Aidez-la à utiliser son inhalateur de secours.</li>
+                    <li>Assurez-vous que la personne est assise confortablement et qu'elle respire calmement.</li>
+                    <li>Si les symptômes persistent ou s'aggravent, appelez les secours.</li>
+                </ol>
+            </article>
+            <!-- 8. Piqûres d'Insectes -->
+            <article class="secours-action" data-keywords="piqûres insectes soins">
+                <h2>Piqûres d'Insectes</h2>
+                <p>Pour soigner une piqûre d'insecte :</p>
+                <ol>
+                    <li>Retirez le dard si nécessaire en le grattant avec une carte rigide.</li>
+                    <li>Lavez la zone avec de l'eau et du savon.</li>
+                    <li>Appliquez une compresse froide pour réduire l'enflure.</li>
+                    <li>Surveillez les signes de réaction allergique sévère.</li>
+                </ol>
+            </article>
+            <!-- 9. Coup de Chaleur -->
+            <article class="secours-action" data-keywords="coup de chaleur déshydratation">
+                <h2>Coup de Chaleur</h2>
+                <p>En cas de coup de chaleur :</p>
+                <ol>
+                    <li>Déplacez la personne à l'ombre ou dans un endroit frais.</li>
+                    <li>Hydratez la personne avec de l'eau ou des boissons isotoniques.</li>
+                    <li>Utilisez des linges mouillés pour refroidir le corps.</li>
+                    <li>Appelez les secours si la personne ne montre pas de signes d'amélioration.</li>
+                </ol>
+            </article>
+            <!-- 10. Hypothermie -->
+            <article class="secours-action" data-keywords="hypothermie froid">
+                <h2>Hypothermie</h2>
+                <p>Si une personne souffre d'hypothermie :</p>
+                <ol>
+                    <li>Déplacez-la dans un endroit chaud et sec.</li>
+                    <li>Retirez les vêtements mouillés et enveloppez la personne dans des couvertures.</li>
+                    <li>Faites-lui boire des boissons chaudes non alcoolisées.</li>
+                    <li>Consultez immédiatement un professionnel de la santé.</li>
+                </ol>
+            </article>            
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-sections">
+                    <div class="footer-section">
+                        <h4>À propos de nous</h4>
+                        <p>Nous sommes dédiés à fournir les meilleurs médicaments et services pharmaceutiques.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p>Adresse: 123 Rue de la Santé, kinshasa, R.D.C</p>
+                        <p>Téléphone: +243 97 1915970</p>
+                        <p>Email: danielngwanza@gmail.com</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Liens rapides</h4>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="index.html">Médicaments</a></li>
+                            <li><a href="partenaires.html">Pharmacies partenaires</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Suivez-nous</h4>
+                        <div class="social-media">
+                            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                            <a href="#"><img src="images/insta.jpg" alt="Instagram"></a>
+                            <a href="#"><img src="images/linkedin.png" alt="Linkedin"></a>
+                            <a href="#"><img src="images/x.png" alt="twitter"></a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Newsletter</h4>
+                        <form action="#">
+                            <input type="email" placeholder="Entrez votre email" required>
+                            <button type="submit">S'abonner</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DN Pharma. Tous droits réservés.</p>
+            </div>
+          </footer>
+    </main>
+    <script src="secour.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+Mot de tête
+          Mot de ventre
+          Fièvre
+          Mal de dos
+          Douleurs
+          Yeux
+          Articulations
+          Allergies
+          Insomnies
+          Fatigue
